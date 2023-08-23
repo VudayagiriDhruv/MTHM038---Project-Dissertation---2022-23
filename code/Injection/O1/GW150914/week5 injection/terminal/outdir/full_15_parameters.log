@@ -1,0 +1,344 @@
+12:52 INFO    : Waveform generator initiated with
+  frequency_domain_source_model: bilby.gw.source.lal_binary_black_hole
+  time_domain_source_model: None
+  parameter_conversion: bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters
+12:52 INFO    : Injected signal in H1:
+12:52 INFO    :   optimal SNR = 11.78
+12:52 INFO    :   matched filter SNR = 12.82-2.04j
+12:52 INFO    :   mass_1 = 36.0
+12:52 INFO    :   mass_2 = 29.0
+12:52 INFO    :   a_1 = 0.4
+12:52 INFO    :   a_2 = 0.3
+12:52 INFO    :   tilt_1 = 0.5
+12:52 INFO    :   tilt_2 = 1.0
+12:52 INFO    :   phi_12 = 1.7
+12:52 INFO    :   phi_jl = 0.3
+12:52 INFO    :   luminosity_distance = 2000.0
+12:52 INFO    :   theta_jn = 0.4
+12:52 INFO    :   psi = 2.659
+12:52 INFO    :   phase = 1.3
+12:52 INFO    :   geocent_time = 1126259642.413
+12:52 INFO    :   ra = 1.375
+12:52 INFO    :   dec = -1.2108
+12:52 INFO    : Injected signal in L1:
+12:52 INFO    :   optimal SNR = 9.53
+12:52 INFO    :   matched filter SNR = 10.03+0.04j
+12:52 INFO    :   mass_1 = 36.0
+12:52 INFO    :   mass_2 = 29.0
+12:52 INFO    :   a_1 = 0.4
+12:52 INFO    :   a_2 = 0.3
+12:52 INFO    :   tilt_1 = 0.5
+12:52 INFO    :   tilt_2 = 1.0
+12:52 INFO    :   phi_12 = 1.7
+12:52 INFO    :   phi_jl = 0.3
+12:52 INFO    :   luminosity_distance = 2000.0
+12:52 INFO    :   theta_jn = 0.4
+12:52 INFO    :   psi = 2.659
+12:52 INFO    :   phase = 1.3
+12:52 INFO    :   geocent_time = 1126259642.413
+12:52 INFO    :   ra = 1.375
+12:52 INFO    :   dec = -1.2108
+12:52 INFO    : No prior given, using default BBH priors in /Users/dhruv/Library/Python/3.9/lib/python/site-packages/bilby/gw/prior_files/precessing_spins_bbh.prior.
+12:52 INFO    : Loaded distance marginalisation lookup table from .distance_marginalization_lookup.npz.
+12:52 INFO    : Running for label 'full_15_parameters', output will be saved to 'outdir'
+12:52 INFO    : Using lal version 7.3.1
+12:52 INFO    : Using lal git version Branch: None;Tag: lalsuite-v7.15;Id: 9a0927aac5e23cd7c93ada22a24aef9e3a12a2c7;;Builder: Unknown User <>;Repository status: CLEAN: All modifications committed
+12:52 INFO    : Using lalsimulation version 5.2.0
+12:52 INFO    : Using lalsimulation git version Branch: None;Tag: lalsuite-v7.15;Id: 9a0927aac5e23cd7c93ada22a24aef9e3a12a2c7;;Builder: Unknown User <>;Repository status: CLEAN: All modifications committed
+12:52 INFO    : Analysis priors:
+12:52 INFO    : mass_ratio=Uniform(minimum=0.5, maximum=1.0, name='mass_ratio', latex_label='$q$', unit=None, boundary=None)
+12:52 INFO    : chirp_mass=Uniform(minimum=10.0, maximum=100.0, name='chirp_mass', latex_label='$M$', unit='$M_{\\odot}$', boundary=None)
+12:52 INFO    : dec=Cosine(minimum=-1.5707963267948966, maximum=1.5707963267948966, name='dec', latex_label='$\\mathrm{DEC}$', unit=None, boundary=None)
+12:52 INFO    : ra=Uniform(minimum=0, maximum=6.283185307179586, name='ra', latex_label='$\\mathrm{RA}$', unit=None, boundary='periodic')
+12:52 INFO    : theta_jn=Sine(minimum=0, maximum=3.141592653589793, name='theta_jn', latex_label='$\\theta_{JN}$', unit=None, boundary=None)
+12:52 INFO    : psi=Uniform(minimum=0, maximum=3.141592653589793, name='psi', latex_label='$\\psi$', unit=None, boundary='periodic')
+12:52 INFO    : a_1=Uniform(minimum=0, maximum=0.99, name='a_1', latex_label='$a_1$', unit=None, boundary=None)
+12:52 INFO    : a_2=Uniform(minimum=0, maximum=0.99, name='a_2', latex_label='$a_2$', unit=None, boundary=None)
+12:52 INFO    : tilt_1=Sine(minimum=0, maximum=3.141592653589793, name='tilt_1', latex_label='$\\theta_1$', unit=None, boundary=None)
+12:52 INFO    : tilt_2=Sine(minimum=0, maximum=3.141592653589793, name='tilt_2', latex_label='$\\theta_2$', unit=None, boundary=None)
+12:52 INFO    : phi_12=Uniform(minimum=0, maximum=6.283185307179586, name='phi_12', latex_label='$\\Delta\\phi$', unit=None, boundary='periodic')
+12:52 INFO    : phi_jl=Uniform(minimum=0, maximum=6.283185307179586, name='phi_jl', latex_label='$\\phi_{JL}$', unit=None, boundary='periodic')
+12:52 INFO    : time_jitter=Uniform(minimum=-0.00048828125, maximum=0.00048828125, name='time_jitter', latex_label='$t_j$', unit=None, boundary='periodic')
+12:52 INFO    : luminosity_distance=3382.9535676088985
+12:52 INFO    : phase=0.0
+12:52 INFO    : geocent_time=1126259639.413
+12:52 INFO    : Analysis likelihood class: <class 'bilby.gw.likelihood.base.GravitationalWaveTransient'>
+12:52 INFO    : Analysis likelihood noise evidence: -8111.161748397406
+12:52 INFO    : Single likelihood evaluation took 1.068e-03 s
+12:52 INFO    : Using sampler Dynesty with kwargs {'nlive': 2000, 'bound': 'live', 'sample': 'act-walk', 'periodic': None, 'reflective': None, 'update_interval': 600, 'first_update': None, 'npdim': None, 'rstate': None, 'queue_size': 1, 'pool': None, 'use_pool': None, 'live_points': None, 'logl_args': None, 'logl_kwargs': None, 'ptform_args': None, 'ptform_kwargs': None, 'gradient': None, 'grad_args': None, 'grad_kwargs': None, 'compute_jac': False, 'enlarge': None, 'bootstrap': None, 'walks': 100, 'facc': 0.2, 'slices': None, 'fmove': 0.9, 'max_move': 100, 'update_func': None, 'ncdim': None, 'blob': False, 'save_history': False, 'history_filename': None, 'maxiter': None, 'maxcall': None, 'dlogz': 0.1, 'logl_max': inf, 'n_effective': None, 'add_live': True, 'print_progress': True, 'print_func': <bound method Dynesty._print_func of <bilby.core.sampler.dynesty.Dynesty object at 0x158214c70>>, 'save_bounds': False, 'checkpoint_file': None, 'checkpoint_every': 60, 'resume': False}
+12:52 INFO    : Checkpoint every check_point_delta_t = 600s
+12:52 INFO    : Using dynesty version 2.1.2
+12:52 INFO    : Using the bilby-implemented rwalk sampling tracking the autocorrelation function and thinning by 2 with maximum length 4000
+12:52 INFO    : Resume file outdir/full_15_parameters_resume.pickle does not exist.
+12:52 INFO    : Generating initial points from the prior
+13:03 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+13:14 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+13:25 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+13:36 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+13:46 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+13:58 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+14:09 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+14:20 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+14:31 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+14:55 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+15:06 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+15:17 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+15:29 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+15:41 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+15:52 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+16:02 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+16:13 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+16:26 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+16:37 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+16:48 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+16:58 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+17:09 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+17:20 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+17:31 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+17:42 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+17:53 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+18:25 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+20:19 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+20:29 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+20:41 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+20:52 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+21:03 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+21:14 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+21:25 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+21:51 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+22:15 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+22:54 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+23:11 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+23:24 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+23:45 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+00:33 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+01:26 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+01:55 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+02:27 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+03:35 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+04:05 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+05:08 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+05:47 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+06:29 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+06:47 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+07:04 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+07:21 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+07:43 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+08:05 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+08:38 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+09:56 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+10:56 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+11:06 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+11:17 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+11:27 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+11:38 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+11:50 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+12:01 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+12:11 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+12:22 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+12:34 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+12:45 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+12:55 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+13:06 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+13:17 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+13:28 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+13:39 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+13:50 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+14:31 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+14:51 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+15:05 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+15:16 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+15:27 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+15:38 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+15:49 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+16:00 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+16:19 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+16:29 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+16:40 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+16:42 INFO    : Run interrupted by signal 15: checkpoint and exit on 130
+17:02 INFO    : Waveform generator initiated with
+  frequency_domain_source_model: bilby.gw.source.lal_binary_black_hole
+  time_domain_source_model: None
+  parameter_conversion: bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters
+17:02 INFO    : Injected signal in H1:
+17:02 INFO    :   optimal SNR = 11.78
+17:02 INFO    :   matched filter SNR = 12.82-2.04j
+17:02 INFO    :   mass_1 = 36.0
+17:02 INFO    :   mass_2 = 29.0
+17:02 INFO    :   a_1 = 0.4
+17:02 INFO    :   a_2 = 0.3
+17:02 INFO    :   tilt_1 = 0.5
+17:02 INFO    :   tilt_2 = 1.0
+17:02 INFO    :   phi_12 = 1.7
+17:02 INFO    :   phi_jl = 0.3
+17:02 INFO    :   luminosity_distance = 2000.0
+17:02 INFO    :   theta_jn = 0.4
+17:02 INFO    :   psi = 2.659
+17:02 INFO    :   phase = 1.3
+17:02 INFO    :   geocent_time = 1126259642.413
+17:02 INFO    :   ra = 1.375
+17:02 INFO    :   dec = -1.2108
+17:02 INFO    : Injected signal in L1:
+17:02 INFO    :   optimal SNR = 9.53
+17:02 INFO    :   matched filter SNR = 10.03+0.04j
+17:02 INFO    :   mass_1 = 36.0
+17:02 INFO    :   mass_2 = 29.0
+17:02 INFO    :   a_1 = 0.4
+17:02 INFO    :   a_2 = 0.3
+17:02 INFO    :   tilt_1 = 0.5
+17:02 INFO    :   tilt_2 = 1.0
+17:02 INFO    :   phi_12 = 1.7
+17:02 INFO    :   phi_jl = 0.3
+17:02 INFO    :   luminosity_distance = 2000.0
+17:02 INFO    :   theta_jn = 0.4
+17:02 INFO    :   psi = 2.659
+17:02 INFO    :   phase = 1.3
+17:02 INFO    :   geocent_time = 1126259642.413
+17:02 INFO    :   ra = 1.375
+17:02 INFO    :   dec = -1.2108
+17:02 INFO    : No prior given, using default BBH priors in /Users/dhruv/Library/Python/3.9/lib/python/site-packages/bilby/gw/prior_files/precessing_spins_bbh.prior.
+17:02 INFO    : Loaded distance marginalisation lookup table from .distance_marginalization_lookup.npz.
+17:02 INFO    : Running for label 'full_15_parameters', output will be saved to 'outdir'
+17:02 INFO    : Using lal version 7.3.1
+17:02 INFO    : Using lal git version Branch: None;Tag: lalsuite-v7.15;Id: 9a0927aac5e23cd7c93ada22a24aef9e3a12a2c7;;Builder: Unknown User <>;Repository status: CLEAN: All modifications committed
+17:02 INFO    : Using lalsimulation version 5.2.0
+17:02 INFO    : Using lalsimulation git version Branch: None;Tag: lalsuite-v7.15;Id: 9a0927aac5e23cd7c93ada22a24aef9e3a12a2c7;;Builder: Unknown User <>;Repository status: CLEAN: All modifications committed
+17:02 INFO    : Analysis priors:
+17:02 INFO    : mass_ratio=Uniform(minimum=0.5, maximum=1.0, name='mass_ratio', latex_label='$q$', unit=None, boundary=None)
+17:02 INFO    : chirp_mass=Uniform(minimum=10.0, maximum=100.0, name='chirp_mass', latex_label='$M$', unit='$M_{\\odot}$', boundary=None)
+17:02 INFO    : dec=Cosine(minimum=-1.5707963267948966, maximum=1.5707963267948966, name='dec', latex_label='$\\mathrm{DEC}$', unit=None, boundary=None)
+17:02 INFO    : ra=Uniform(minimum=0, maximum=6.283185307179586, name='ra', latex_label='$\\mathrm{RA}$', unit=None, boundary='periodic')
+17:02 INFO    : theta_jn=Sine(minimum=0, maximum=3.141592653589793, name='theta_jn', latex_label='$\\theta_{JN}$', unit=None, boundary=None)
+17:02 INFO    : psi=Uniform(minimum=0, maximum=3.141592653589793, name='psi', latex_label='$\\psi$', unit=None, boundary='periodic')
+17:02 INFO    : a_1=Uniform(minimum=0, maximum=0.99, name='a_1', latex_label='$a_1$', unit=None, boundary=None)
+17:02 INFO    : a_2=Uniform(minimum=0, maximum=0.99, name='a_2', latex_label='$a_2$', unit=None, boundary=None)
+17:02 INFO    : tilt_1=Sine(minimum=0, maximum=3.141592653589793, name='tilt_1', latex_label='$\\theta_1$', unit=None, boundary=None)
+17:02 INFO    : tilt_2=Sine(minimum=0, maximum=3.141592653589793, name='tilt_2', latex_label='$\\theta_2$', unit=None, boundary=None)
+17:02 INFO    : phi_12=Uniform(minimum=0, maximum=6.283185307179586, name='phi_12', latex_label='$\\Delta\\phi$', unit=None, boundary='periodic')
+17:02 INFO    : phi_jl=Uniform(minimum=0, maximum=6.283185307179586, name='phi_jl', latex_label='$\\phi_{JL}$', unit=None, boundary='periodic')
+17:02 INFO    : time_jitter=Uniform(minimum=-0.00048828125, maximum=0.00048828125, name='time_jitter', latex_label='$t_j$', unit=None, boundary='periodic')
+17:02 INFO    : luminosity_distance=3382.9535676088985
+17:02 INFO    : phase=0.0
+17:02 INFO    : geocent_time=1126259639.413
+17:02 INFO    : Analysis likelihood class: <class 'bilby.gw.likelihood.base.GravitationalWaveTransient'>
+17:02 INFO    : Analysis likelihood noise evidence: -8111.161748397406
+17:02 INFO    : Single likelihood evaluation took 1.104e-03 s
+17:02 INFO    : Using sampler Dynesty with kwargs {'nlive': 2000, 'bound': 'live', 'sample': 'act-walk', 'periodic': None, 'reflective': None, 'update_interval': 600, 'first_update': None, 'npdim': None, 'rstate': None, 'queue_size': 1, 'pool': None, 'use_pool': None, 'live_points': None, 'logl_args': None, 'logl_kwargs': None, 'ptform_args': None, 'ptform_kwargs': None, 'gradient': None, 'grad_args': None, 'grad_kwargs': None, 'compute_jac': False, 'enlarge': None, 'bootstrap': None, 'walks': 100, 'facc': 0.2, 'slices': None, 'fmove': 0.9, 'max_move': 100, 'update_func': None, 'ncdim': None, 'blob': False, 'save_history': False, 'history_filename': None, 'maxiter': None, 'maxcall': None, 'dlogz': 0.1, 'logl_max': inf, 'n_effective': None, 'add_live': True, 'print_progress': True, 'print_func': <bound method Dynesty._print_func of <bilby.core.sampler.dynesty.Dynesty object at 0x161fac4f0>>, 'save_bounds': False, 'checkpoint_file': None, 'checkpoint_every': 60, 'resume': False}
+17:02 INFO    : Checkpoint every check_point_delta_t = 600s
+17:02 INFO    : Using dynesty version 2.1.2
+17:02 INFO    : Using the bilby-implemented rwalk sampling tracking the autocorrelation function and thinning by 2 with maximum length 4000
+17:02 INFO    : Reading resume file outdir/full_15_parameters_resume.pickle
+17:02 INFO    : Resume file successfully loaded.
+17:04 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+17:15 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+17:25 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+17:36 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+17:47 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+19:00 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+19:18 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+19:33 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+19:44 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+20:14 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+20:27 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+20:38 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+20:48 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+20:49 INFO    : Run interrupted by signal 15: checkpoint and exit on 130
+20:52 INFO    : Waveform generator initiated with
+  frequency_domain_source_model: bilby.gw.source.lal_binary_black_hole
+  time_domain_source_model: None
+  parameter_conversion: bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters
+20:52 INFO    : Injected signal in H1:
+20:52 INFO    :   optimal SNR = 11.78
+20:52 INFO    :   matched filter SNR = 12.82-2.04j
+20:52 INFO    :   mass_1 = 36.0
+20:52 INFO    :   mass_2 = 29.0
+20:52 INFO    :   a_1 = 0.4
+20:52 INFO    :   a_2 = 0.3
+20:52 INFO    :   tilt_1 = 0.5
+20:52 INFO    :   tilt_2 = 1.0
+20:52 INFO    :   phi_12 = 1.7
+20:52 INFO    :   phi_jl = 0.3
+20:52 INFO    :   luminosity_distance = 2000.0
+20:52 INFO    :   theta_jn = 0.4
+20:52 INFO    :   psi = 2.659
+20:52 INFO    :   phase = 1.3
+20:52 INFO    :   geocent_time = 1126259642.413
+20:52 INFO    :   ra = 1.375
+20:52 INFO    :   dec = -1.2108
+20:52 INFO    : Injected signal in L1:
+20:52 INFO    :   optimal SNR = 9.53
+20:52 INFO    :   matched filter SNR = 10.03+0.04j
+20:52 INFO    :   mass_1 = 36.0
+20:52 INFO    :   mass_2 = 29.0
+20:52 INFO    :   a_1 = 0.4
+20:52 INFO    :   a_2 = 0.3
+20:52 INFO    :   tilt_1 = 0.5
+20:52 INFO    :   tilt_2 = 1.0
+20:52 INFO    :   phi_12 = 1.7
+20:52 INFO    :   phi_jl = 0.3
+20:52 INFO    :   luminosity_distance = 2000.0
+20:52 INFO    :   theta_jn = 0.4
+20:52 INFO    :   psi = 2.659
+20:52 INFO    :   phase = 1.3
+20:52 INFO    :   geocent_time = 1126259642.413
+20:52 INFO    :   ra = 1.375
+20:52 INFO    :   dec = -1.2108
+20:52 INFO    : No prior given, using default BBH priors in /Users/dhruv/Library/Python/3.9/lib/python/site-packages/bilby/gw/prior_files/precessing_spins_bbh.prior.
+20:52 INFO    : Loaded distance marginalisation lookup table from .distance_marginalization_lookup.npz.
+20:52 INFO    : Running for label 'full_15_parameters', output will be saved to 'outdir'
+20:52 INFO    : Using lal version 7.3.1
+20:52 INFO    : Using lal git version Branch: None;Tag: lalsuite-v7.15;Id: 9a0927aac5e23cd7c93ada22a24aef9e3a12a2c7;;Builder: Unknown User <>;Repository status: CLEAN: All modifications committed
+20:52 INFO    : Using lalsimulation version 5.2.0
+20:52 INFO    : Using lalsimulation git version Branch: None;Tag: lalsuite-v7.15;Id: 9a0927aac5e23cd7c93ada22a24aef9e3a12a2c7;;Builder: Unknown User <>;Repository status: CLEAN: All modifications committed
+20:52 INFO    : Analysis priors:
+20:52 INFO    : mass_ratio=Uniform(minimum=0.5, maximum=1.0, name='mass_ratio', latex_label='$q$', unit=None, boundary=None)
+20:52 INFO    : chirp_mass=Uniform(minimum=10.0, maximum=100.0, name='chirp_mass', latex_label='$M$', unit='$M_{\\odot}$', boundary=None)
+20:52 INFO    : dec=Cosine(minimum=-1.5707963267948966, maximum=1.5707963267948966, name='dec', latex_label='$\\mathrm{DEC}$', unit=None, boundary=None)
+20:52 INFO    : ra=Uniform(minimum=0, maximum=6.283185307179586, name='ra', latex_label='$\\mathrm{RA}$', unit=None, boundary='periodic')
+20:52 INFO    : theta_jn=Sine(minimum=0, maximum=3.141592653589793, name='theta_jn', latex_label='$\\theta_{JN}$', unit=None, boundary=None)
+20:52 INFO    : psi=Uniform(minimum=0, maximum=3.141592653589793, name='psi', latex_label='$\\psi$', unit=None, boundary='periodic')
+20:52 INFO    : a_1=Uniform(minimum=0, maximum=0.99, name='a_1', latex_label='$a_1$', unit=None, boundary=None)
+20:52 INFO    : a_2=Uniform(minimum=0, maximum=0.99, name='a_2', latex_label='$a_2$', unit=None, boundary=None)
+20:52 INFO    : tilt_1=Sine(minimum=0, maximum=3.141592653589793, name='tilt_1', latex_label='$\\theta_1$', unit=None, boundary=None)
+20:52 INFO    : tilt_2=Sine(minimum=0, maximum=3.141592653589793, name='tilt_2', latex_label='$\\theta_2$', unit=None, boundary=None)
+20:52 INFO    : phi_12=Uniform(minimum=0, maximum=6.283185307179586, name='phi_12', latex_label='$\\Delta\\phi$', unit=None, boundary='periodic')
+20:52 INFO    : phi_jl=Uniform(minimum=0, maximum=6.283185307179586, name='phi_jl', latex_label='$\\phi_{JL}$', unit=None, boundary='periodic')
+20:52 INFO    : time_jitter=Uniform(minimum=-0.00048828125, maximum=0.00048828125, name='time_jitter', latex_label='$t_j$', unit=None, boundary='periodic')
+20:52 INFO    : luminosity_distance=3382.9535676088985
+20:52 INFO    : phase=0.0
+20:52 INFO    : geocent_time=1126259639.413
+20:52 INFO    : Analysis likelihood class: <class 'bilby.gw.likelihood.base.GravitationalWaveTransient'>
+20:52 INFO    : Analysis likelihood noise evidence: -8111.161748397406
+20:52 INFO    : Single likelihood evaluation took 1.071e-03 s
+20:52 INFO    : Using sampler Dynesty with kwargs {'nlive': 2000, 'bound': 'live', 'sample': 'act-walk', 'periodic': None, 'reflective': None, 'update_interval': 600, 'first_update': None, 'npdim': None, 'rstate': None, 'queue_size': 1, 'pool': None, 'use_pool': None, 'live_points': None, 'logl_args': None, 'logl_kwargs': None, 'ptform_args': None, 'ptform_kwargs': None, 'gradient': None, 'grad_args': None, 'grad_kwargs': None, 'compute_jac': False, 'enlarge': None, 'bootstrap': None, 'walks': 100, 'facc': 0.2, 'slices': None, 'fmove': 0.9, 'max_move': 100, 'update_func': None, 'ncdim': None, 'blob': False, 'save_history': False, 'history_filename': None, 'maxiter': None, 'maxcall': None, 'dlogz': 0.1, 'logl_max': inf, 'n_effective': None, 'add_live': True, 'print_progress': True, 'print_func': <bound method Dynesty._print_func of <bilby.core.sampler.dynesty.Dynesty object at 0x14c1ab850>>, 'save_bounds': False, 'checkpoint_file': None, 'checkpoint_every': 60, 'resume': False}
+20:52 INFO    : Checkpoint every check_point_delta_t = 600s
+20:52 INFO    : Using dynesty version 2.1.2
+20:52 INFO    : Using the bilby-implemented rwalk sampling tracking the autocorrelation function and thinning by 2 with maximum length 4000
+20:52 INFO    : Reading resume file outdir/full_15_parameters_resume.pickle
+20:52 INFO    : Resume file successfully loaded.
+21:14 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+21:26 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+21:37 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+21:48 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+21:59 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+22:09 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+22:20 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+22:31 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+22:42 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+23:24 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+01:21 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+04:53 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+05:43 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+06:32 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+06:49 INFO    : Rejection sampling nested samples to obtain 9361 posterior samples
+06:49 INFO    : Sampling time: 1 day, 17:30:54.082119
+06:49 INFO    : Computing per-detector log likelihoods.
+07:37 INFO    : Reconstructing marginalised parameters.
+08:57 INFO    : Generating sky frame parameters.
+08:57 INFO    : Computing SNRs for every sample.
+09:03 INFO    : Summary of results:
+nsamples: 9361
+ln_noise_evidence: -8111.162
+ln_evidence: -8004.045 +/-  0.101
+ln_bayes_factor: 107.117 +/-  0.101
+

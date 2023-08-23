@@ -1,0 +1,1 @@
+mass_ratio	chirp_mass	dec	ra	theta_jn	psi	a_1	a_2	tilt_1	tilt_2	phi_12	phi_jl	time_jitter	logL

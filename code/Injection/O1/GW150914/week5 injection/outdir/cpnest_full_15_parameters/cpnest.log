@@ -1,0 +1,6 @@
+2023-07-09, 22:36:06 - cpnest.cpnest.CPNest                  : Running with 1 parallel threads
+2023-07-09, 22:36:06 - cpnest.cpnest.CPNest                  : The n_periodic_checkpoint kwarg is deprecated, use periodic_checkpoint_interval instead.
+2023-07-10, 11:32:50 - cpnest.cpnest                         : Handling signal 2
+2023-07-10, 11:33:21 - cpnest.cpnest.CPNest                  : Running with 1 parallel threads
+2023-07-10, 11:33:21 - cpnest.cpnest.CPNest                  : The n_periodic_checkpoint kwarg is deprecated, use periodic_checkpoint_interval instead.
+2023-07-10, 12:28:30 - cpnest.cpnest                         : Handling signal 2

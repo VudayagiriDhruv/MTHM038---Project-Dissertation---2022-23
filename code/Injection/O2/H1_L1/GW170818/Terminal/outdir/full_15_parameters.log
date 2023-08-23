@@ -1,0 +1,122 @@
+16:55 INFO    : Waveform generator initiated with
+  frequency_domain_source_model: bilby.gw.source.lal_binary_black_hole
+  time_domain_source_model: None
+  parameter_conversion: bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters
+16:55 INFO    : Injected signal in H1:
+16:55 INFO    :   optimal SNR = 17.24
+16:55 INFO    :   matched filter SNR = 16.51+1.04j
+16:55 INFO    :   mass_1 = 36.0
+16:55 INFO    :   mass_2 = 29.0
+16:55 INFO    :   a_1 = 0.4
+16:55 INFO    :   a_2 = 0.3
+16:55 INFO    :   tilt_1 = 0.5
+16:55 INFO    :   tilt_2 = 1.0
+16:55 INFO    :   phi_12 = 1.7
+16:55 INFO    :   phi_jl = 0.3
+16:55 INFO    :   luminosity_distance = 2000.0
+16:55 INFO    :   theta_jn = 0.4
+16:55 INFO    :   psi = 2.659
+16:55 INFO    :   phase = 1.3
+16:55 INFO    :   geocent_time = 1187058507
+16:55 INFO    :   ra = 1.375
+16:55 INFO    :   dec = -1.2108
+16:55 INFO    : Injected signal in L1:
+16:55 INFO    :   optimal SNR = 14.98
+16:55 INFO    :   matched filter SNR = 13.18+0.14j
+16:55 INFO    :   mass_1 = 36.0
+16:55 INFO    :   mass_2 = 29.0
+16:55 INFO    :   a_1 = 0.4
+16:55 INFO    :   a_2 = 0.3
+16:55 INFO    :   tilt_1 = 0.5
+16:55 INFO    :   tilt_2 = 1.0
+16:55 INFO    :   phi_12 = 1.7
+16:55 INFO    :   phi_jl = 0.3
+16:55 INFO    :   luminosity_distance = 2000.0
+16:55 INFO    :   theta_jn = 0.4
+16:55 INFO    :   psi = 2.659
+16:55 INFO    :   phase = 1.3
+16:55 INFO    :   geocent_time = 1187058507
+16:55 INFO    :   ra = 1.375
+16:55 INFO    :   dec = -1.2108
+16:55 INFO    : No prior given, using default BBH priors in /Users/dhruv/Library/Python/3.9/lib/python/site-packages/bilby/gw/prior_files/precessing_spins_bbh.prior.
+16:55 INFO    : Loaded distance marginalisation lookup table from .distance_marginalization_lookup.npz.
+16:55 INFO    : Running for label 'full_15_parameters', output will be saved to 'outdir'
+16:55 INFO    : Using lal version 7.3.1
+16:55 INFO    : Using lal git version Branch: None;Tag: lalsuite-v7.15;Id: 9a0927aac5e23cd7c93ada22a24aef9e3a12a2c7;;Builder: Unknown User <>;Repository status: CLEAN: All modifications committed
+16:55 INFO    : Using lalsimulation version 5.2.0
+16:55 INFO    : Using lalsimulation git version Branch: None;Tag: lalsuite-v7.15;Id: 9a0927aac5e23cd7c93ada22a24aef9e3a12a2c7;;Builder: Unknown User <>;Repository status: CLEAN: All modifications committed
+16:55 INFO    : Analysis priors:
+16:55 INFO    : mass_ratio=Uniform(minimum=0.5, maximum=1.0, name='mass_ratio', latex_label='$q$', unit=None, boundary=None)
+16:55 INFO    : chirp_mass=Uniform(minimum=10.0, maximum=100.0, name='chirp_mass', latex_label='$M$', unit='$M_{\\odot}$', boundary=None)
+16:55 INFO    : dec=Cosine(minimum=-1.5707963267948966, maximum=1.5707963267948966, name='dec', latex_label='$\\mathrm{DEC}$', unit=None, boundary=None)
+16:55 INFO    : ra=Uniform(minimum=0, maximum=6.283185307179586, name='ra', latex_label='$\\mathrm{RA}$', unit=None, boundary='periodic')
+16:55 INFO    : theta_jn=Sine(minimum=0, maximum=3.141592653589793, name='theta_jn', latex_label='$\\theta_{JN}$', unit=None, boundary=None)
+16:55 INFO    : psi=Uniform(minimum=0, maximum=3.141592653589793, name='psi', latex_label='$\\psi$', unit=None, boundary='periodic')
+16:55 INFO    : a_1=Uniform(minimum=0, maximum=0.99, name='a_1', latex_label='$a_1$', unit=None, boundary=None)
+16:55 INFO    : a_2=Uniform(minimum=0, maximum=0.99, name='a_2', latex_label='$a_2$', unit=None, boundary=None)
+16:55 INFO    : tilt_1=Sine(minimum=0, maximum=3.141592653589793, name='tilt_1', latex_label='$\\theta_1$', unit=None, boundary=None)
+16:55 INFO    : tilt_2=Sine(minimum=0, maximum=3.141592653589793, name='tilt_2', latex_label='$\\theta_2$', unit=None, boundary=None)
+16:55 INFO    : phi_12=Uniform(minimum=0, maximum=6.283185307179586, name='phi_12', latex_label='$\\Delta\\phi$', unit=None, boundary='periodic')
+16:55 INFO    : phi_jl=Uniform(minimum=0, maximum=6.283185307179586, name='phi_jl', latex_label='$\\phi_{JL}$', unit=None, boundary='periodic')
+16:55 INFO    : time_jitter=Uniform(minimum=-0.00048828125, maximum=0.00048828125, name='time_jitter', latex_label='$t_j$', unit=None, boundary='periodic')
+16:55 INFO    : luminosity_distance=3382.9535676088985
+16:55 INFO    : phase=0.0
+16:55 INFO    : geocent_time=1187058504.0
+16:55 INFO    : Analysis likelihood class: <class 'bilby.gw.likelihood.base.GravitationalWaveTransient'>
+16:55 INFO    : Analysis likelihood noise evidence: -8200.636221045697
+16:55 INFO    : Single likelihood evaluation took 1.102e-03 s
+16:55 WARNING : Supplied argument 'npoints' not an argument of 'Dynesty', removing.
+16:55 WARNING : Supplied argument 'n_checkpoint' not an argument of 'Dynesty', removing.
+16:55 INFO    : Using sampler Dynesty with kwargs {'nlive': 512, 'bound': 'live', 'sample': 'act-walk', 'periodic': None, 'reflective': None, 'update_interval': 600, 'first_update': None, 'npdim': None, 'rstate': None, 'queue_size': 1, 'pool': None, 'use_pool': None, 'live_points': None, 'logl_args': None, 'logl_kwargs': None, 'ptform_args': None, 'ptform_kwargs': None, 'gradient': None, 'grad_args': None, 'grad_kwargs': None, 'compute_jac': False, 'enlarge': None, 'bootstrap': None, 'walks': 100, 'facc': 0.2, 'slices': None, 'fmove': 0.9, 'max_move': 100, 'update_func': None, 'ncdim': None, 'blob': False, 'save_history': False, 'history_filename': None, 'maxiter': None, 'maxcall': None, 'dlogz': 0.2, 'logl_max': inf, 'n_effective': None, 'add_live': True, 'print_progress': True, 'print_func': <bound method Dynesty._print_func of <bilby.core.sampler.dynesty.Dynesty object at 0x16acce9a0>>, 'save_bounds': False, 'checkpoint_file': None, 'checkpoint_every': 60, 'resume': False}
+16:55 INFO    : Checkpoint every check_point_delta_t = 600s
+16:55 INFO    : Using dynesty version 2.1.2
+16:55 INFO    : Using the bilby-implemented rwalk sampling tracking the autocorrelation function and thinning by 2 with maximum length 2000
+16:55 INFO    : Resume file outdir/full_15_parameters_resume.pickle does not exist.
+16:55 INFO    : Generating initial points from the prior
+19:07 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+21:41 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+23:14 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+01:09 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+03:01 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+04:51 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+07:00 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+08:33 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+09:36 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+10:11 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+10:53 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+11:04 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+11:14 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+11:25 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+11:35 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+11:55 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+12:06 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+12:17 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+12:19 WARNING : Unable to find a new point using walk: try increasing maxmcmc
+12:27 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+12:32 WARNING : Unable to find a new point using walk: try increasing maxmcmc
+12:38 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+12:44 WARNING : Unable to find a new point using walk: try increasing maxmcmc
+12:48 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+13:01 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+13:02 WARNING : Unable to find a new point using walk: try increasing maxmcmc
+13:11 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+13:21 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+13:33 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+13:35 WARNING : Unable to find a new point using walk: try increasing maxmcmc
+13:43 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+13:49 WARNING : Unable to find a new point using walk: try increasing maxmcmc
+13:54 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+13:57 WARNING : Unable to find a new point using walk: try increasing maxmcmc
+13:58 INFO    : Written checkpoint file outdir/full_15_parameters_resume.pickle
+13:58 INFO    : Rejection sampling nested samples to obtain 2412 posterior samples
+13:58 INFO    : Sampling time: 21:03:17.192872
+13:58 INFO    : Computing per-detector log likelihoods.
+13:58 INFO    : Reconstructing marginalised parameters.
+13:58 INFO    : Generating sky frame parameters.
+13:58 INFO    : Computing SNRs for every sample.
+14:04 INFO    : Summary of results:
+nsamples: 2412
+ln_noise_evidence: -8200.636
+ln_evidence: -8005.223 +/-  0.231
+ln_bayes_factor: 195.413 +/-  0.231
+
