@@ -83,7 +83,7 @@ likelihood = bilby.gw.GravitationalWaveTransient(
     interferometers=ifos, waveform_generator=waveform_generator, priors=priors,
     distance_marginalization=True, phase_marginalization=True, time_marginalization=True)
 
-# Run sampler. In this case we're going to use the `cpnest` sampler
+# Run sampler. In this case we're going to use the `dynesty` sampler
 # Note that the maxmcmc parameter is increased so that between each iteration of
 # the nested sampler approach, the walkers will move further using an mcmc
 # approach, searching the full parameter space.
